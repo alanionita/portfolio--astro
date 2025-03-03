@@ -1,0 +1,45 @@
+---
+import BaseHead from '../components/BaseHead.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+	</head>
+	<body>
+		<Header />
+		<main>
+			<h1 class="primary-text">I'm Alan Ionita,</h1>
+			<p class="primary-text">Software Developer from 53.483959, -2.244644.</p>
+			<p class="primary-text">
+				Independently working on open-source projects
+			</p>
+			<h2 class="secondary-text">Production experience:</h2>
+			<p class="secondary-text">Web + Cloud + Backend + Strategy + Embedded.</p>
+			<h2 class="tertiary-text">Teaching experience:</h2>
+			<ul class="tertiary-list">
+				<li>
+					<p class="tertiary-text">
+						Instructor at <a href="https://www.manchester.ac.uk/study/cpd/coding-bootcamp/" target="_blank">The University of Manchester</a>
+					</p>
+					<p class="tertiary-text">Teaching Fullstack Web Development</p>
+				</li>
+				<li>
+					<p class="tertiary-text">Mentor at <a href="https://codebar.io" target="_blank">Codebar</a></p>
+					<p class="tertiary-text">Free monthly programming workshops for diverse communities</p>
+				</li>
+				<li>
+					<p class="tertiary-text">
+						Co-organiser of <a href="https://codeyourfuture.io" target="_blank">CodeYourFuture</a>
+					</p>
+					<p class="tertiary-text">Non-profit coding school for refugees</p>
+				</li>
+			</ul>
+		</main>
+		<Footer />
+	</body>
+</html>
