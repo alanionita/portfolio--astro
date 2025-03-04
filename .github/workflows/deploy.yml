@@ -23,9 +23,7 @@ jobs:
         
         - name: build
           uses: withastro/action@v2
-          with: 
-            path: '/${{ github.event.repository.name }}'
-
+          
         - name: Upload Artifacts
           uses: actions/upload-pages-artifact@v3        
           with:         
